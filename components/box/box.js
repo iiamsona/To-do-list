@@ -12,15 +12,14 @@ const addCard = document.createElement("button");
 
 box.style.width = "270px";
 box.style.height = "90px";
-box.style.background = "#1A1818";
-box.style.borderRadius = "15px";
 box.style.padding = "5px";
+box.style.borderRadius = "10px";
+box.style.background = "#1A1818";
 
-boxHeader.style.display = "flex";
-boxHeader.style.justifyContent = "space-between";
 boxHeader.style.width = "100%";
 boxHeader.style.height = "50%";
-boxHeader.style.borderRadius = "15px";
+boxHeader.style.display = "flex";
+boxHeader.style.justifyContent = "space-between";
 boxHeader.style.padding = "10px";
 
 title.innerHTML = "Add title";
@@ -28,20 +27,20 @@ title.style.fontFamily = 'Times, "Times New Roman", serif';
 title.style.color = "#F5FFE7";
 
 iconDots.style.color = "#F5FFE7";
+iconDots.style.fontFamily = 'Times, "Times New Roman", serif';
 
 boxFooter.style.width = "100%";
 boxFooter.style.height = "50%";
-boxFooter.style.borderRadius = "15px"; //jnjel
-boxFooter.style.padding = "10px";
 boxFooter.style.display = "flex";
+boxFooter.style.padding = "10px";
 boxFooter.style.alignItems = "flex-end";
 
+addCard.innerHTML = "+ Add a card";
 addCard.style.width = "100%";
 addCard.style.height = "90%";
-addCard.style.borderRadius = "5px"; //jnjel
-addCard.style.padding = "1px";
+addCard.style.padding = "2px";
 addCard.style.border = "none";
-addCard.innerHTML = "+ Add a card";
+addCard.style.borderRadius = '10px';
 addCard.style.textAlign = "left";
 addCard.style.color = "#7F7F7F";
 addCard.style.background = "#1A1818";
