@@ -3,6 +3,7 @@ const button = document.createElement("button");
 
 button.innerHTML = "Add card";
 button.style.fontSize = "18px";
+button.style.fontFamily = 'Times, "Times New Roman", serif';
 
 button.style.height = "5%";
 button.style.width = "7%";
