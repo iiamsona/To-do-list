@@ -1,4 +1,4 @@
-const root = document.getElementById("root");
+//const root = document.getElementById("root");
 const button = document.createElement("button");
 
 button.innerHTML = "Add card";
@@ -25,4 +25,4 @@ button.addEventListener("mouseout", () => {
   button.style.background = "#CC99FF";
 });
 
-root.appendChild(button);
+// root.appendChild(button);
