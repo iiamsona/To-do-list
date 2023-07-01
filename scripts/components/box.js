@@ -25,9 +25,11 @@ boxHeader.style.padding = "10px";
 title.innerHTML = "Add title";
 title.style.fontFamily = 'Times, "Times New Roman", serif';
 title.style.color = "#F5FFE7";
+title.style.cursor = 'pointer';
 
 iconDots.style.color = "#F5FFE7";
 iconDots.style.fontFamily = 'Times, "Times New Roman", serif';
+iconDots.style.cursor = 'pointer';
 
 boxFooter.style.width = "100%";
 boxFooter.style.height = "50%";
@@ -44,6 +46,7 @@ addCard.style.borderRadius = '10px';
 addCard.style.textAlign = "left";
 addCard.style.color = "#7F7F7F";
 addCard.style.background = "#1A1818";
+addCard.style.cursor = 'pointer';
 
 addCard.addEventListener("mouseover", () => {
   addCard.style.background = "#E3DDC4";
