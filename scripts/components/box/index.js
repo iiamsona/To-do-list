@@ -1,6 +1,6 @@
-const root = document.getElementById("root");
+// const root = document.getElementById("root");
 
-const box = document.createElement("div");
+export const box = document.createElement("div");
 
 const boxHeader = document.createElement("div");
 const title = document.createElement("p");
@@ -65,4 +65,3 @@ boxFooter.appendChild(addCard);
 box.appendChild(boxHeader);
 box.appendChild(boxFooter);
 
-root.appendChild(box);

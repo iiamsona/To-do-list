@@ -1,5 +1,5 @@
 //const root = document.getElementById("root");
-const button = document.createElement("button");
+export const button = document.createElement("button");
 
 button.innerHTML = "Add card";
 button.style.fontSize = "18px";
