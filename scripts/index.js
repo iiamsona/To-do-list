@@ -8,8 +8,8 @@ const root = document.getElementById("root");
 const firstBoxes = new Box("Boxes", "To Do");
 root.appendChild(firstBoxes);
 
-const myText = new Text("");
-root.appendChild(myText);
+// const myText = new Text("");
+// root.appendChild(myText);
 
 // const createBtn = new Button("Create", "Create");
 // root.appendChild(createBtn);
