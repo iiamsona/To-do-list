@@ -15,7 +15,7 @@ export default class Box {
   <div class = '${this.props.className}'>
     <div class = 'box'>
         <div class = 'boxHeader'>
-          <p class = 'title'> '${this.props.title}'</p>
+          <p class = 'title'> ${this.props.title}</p>
           <button class = 'dots'>···</button>
         </div>
         <div class = 'boxFooter'>

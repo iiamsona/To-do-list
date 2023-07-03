@@ -30,7 +30,7 @@ html {
 }
 
 #button:hover {
-  background: #d5a5ff;
+  background-color: #d5a5ff;
 }
 
 .box {
@@ -38,7 +38,7 @@ html {
   height: 90px;
   padding: 5px;
   border-radius: 10px;
-  background: #1a1818;
+  background-color: #1a1818;
 }
 
 .boxHeader {
@@ -47,8 +47,10 @@ html {
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  background-color: #1a1818;
 }
 .title {
+  background-color: #1a1818;
   font-family: Times, "Times New Roman", serif;
   color: #f5ffe7;
   cursor: pointer;
@@ -68,6 +70,7 @@ html {
   display: flex;
   padding: 10px;
   align-items: flex-end;
+  background-color: #1a1818;
 }
 
 .addCard {
@@ -95,6 +98,6 @@ html {
   border-radius: 10px;
   border: none;
   color: #000000;
-  background-color: #7f7f7f10;
+  background-color: #7f7f7f80;
   cursor: pointer;
 }
