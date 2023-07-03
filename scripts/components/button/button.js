@@ -12,16 +12,12 @@ export default class Button {
 
   render() {
     return `
- <button class = '${this.props.className}'>
+ <button class = '${this.props.className}' id = 'button'>
  ${this.props.label}
  </button>
   `;
   }
 }
-
-// export const button = document.createElement("button");
-
-// button.innerHTML = "Add card";
 
 // button.addEventListener("mouseover", () => {
 //   button.style.background = "#D5A5FF";

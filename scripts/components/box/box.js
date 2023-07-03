@@ -1,27 +1,19 @@
 export default class Box {
- props = {}
- 
- addCardListener() {
-  const addCardButton = document.getElementsByClassName('addCard');
-  addCardButton.addEventListener('click', () => {
-    console.log("ANASUN")
-  });
-}
+  props = {};
 
- constructor(className, title){
-  this.props.className = className
-  this.props.title = title
+  constructor(className, title) {
+    this.props.className = className;
+    this.props.title = title;
 
-  const parser = new DOMParser;
-  const html = parser.parseFromString(this.render(), "text/html")
-  return html.body.firstChild
+    const parser = new DOMParser();
+    const html = parser.parseFromString(this.render(), "text/html");
+    return html.body.firstChild;
 
-  addCardListener()
- }
+    addCardListener();
+  }
 
- render()
- { 
-  return `
+  render() {
+    return `
   <div class = '${this.props.className}'>
     <div class = 'box'>
         <div class = 'boxHeader'>
@@ -33,19 +25,18 @@ export default class Box {
         </div>
     </div>
   </div>
-  `
- }
+  `;
+  }
 
+  addCardListener() {
+    const addCardButton = document.getElementsByClassName("addCard");
+    addCardButton.addEventListener("mouseover", () => {
+      addCardButton.style.background = "#E3DDC4";
+      addCardButton.style.opacity = "0.5";
+    });
+  }
 }
-
-
-
-
-
 
 // addCard.addEventListener("mouseout", () => {
 //   addCard.style.background = "#1A1818";
 // });
-
-
-

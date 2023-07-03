@@ -15,20 +15,17 @@ html {
   height: 100%;
 }
 
-.button {
+#button {
   font-size: 18px;
   font-family: 'Times, "Times New Roman", serif';
-
   height: 5%;
   width: 7%;
   min-height: 45px;
   min-width: 50px;
-
   border: none;
   border-radius: 5px;
   background: #cc99ff;
   color: #000000;
-
   cursor: pointer;
 }
 
@@ -54,8 +51,8 @@ html {
 }
 
 .dots {
-background-color: #1a1818;
-border: none;
+  background-color: #1a1818;
+  border: none;
   color: #f5ffe7;
   font-family: Times, "Times New Roman", serif;
   cursor: pointer;
