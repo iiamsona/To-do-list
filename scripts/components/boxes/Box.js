@@ -8,8 +8,6 @@ export default class Box {
     const parser = new DOMParser();
     const html = parser.parseFromString(this.render(), "text/html");
     return html.body.firstChild;
-
-    addCardListener();
   }
 
   render() {
@@ -27,16 +25,4 @@ export default class Box {
   </div>
   `;
   }
-
-  addCardListener() {
-    const addCardButton = document.getElementsByClassName("addCard");
-    addCardButton.addEventListener("mouseover", () => {
-      addCardButton.style.background = "#E3DDC4";
-      addCardButton.style.opacity = "0.5";
-    });
-  }
 }
-
-// addCard.addEventListener("mouseout", () => {
-//   addCard.style.background = "#1A1818";
-// });

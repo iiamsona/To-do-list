@@ -19,12 +19,3 @@ export default class Button {
   }
 }
 
-// button.addEventListener("mouseover", () => {
-//   button.style.background = "#D5A5FF";
-// });
-
-// button.addEventListener("mouseout", () => {
-//   button.style.background = "#CC99FF";
-// });
-
-// // root.appendChild(button);

@@ -29,6 +29,10 @@ html {
   cursor: pointer;
 }
 
+#button:hover {
+  background: #d5a5ff;
+}
+
 .box {
   width: 270px;
   height: 90px;
@@ -75,5 +79,22 @@ html {
   text-align: left;
   color: #7f7f7f;
   background-color: #1a1818;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.addCard:hover {
+  background: #e3ddc4;
+  color: #000000;
+  opacity: 0.2;
+}
+
+#addList {
+  width: 270px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  color: #000000;
+  background-color: #7f7f7f10;
   cursor: pointer;
 }

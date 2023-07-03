@@ -1,9 +1,14 @@
 import Button from "./components/button/button.js";
-import Box from "./components/box/box.js";
+import Box from "./components/boxes/Box.js";
+import AddList from "./components/boxes/AddList.js";
+
 const root = document.getElementById("root");
 
-const myBox = new Box("barev aperik", "barev aperik");
+const myBox = new Box('barev aperik', 'barev aperik');
 root.appendChild(myBox);
 
 const myButton = new Button("barev aperik2", "barev aperik");
 root.appendChild(myButton);
+
+const addList = new AddList();
+root.appendChild(addList)
