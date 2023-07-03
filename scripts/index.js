@@ -1,6 +1,6 @@
-import { box } from "./components/box/index.js";
-import { button } from "./components/button/index.js";
+import Button from "./components/button/button.js";
+import Box from "./components/box/box.js";
+const root = document.getElementById('root');
 
-const root = document.getElementById("root");
-root.appendChild(box);
-root.appendChild(button);
+const myBox = new Box("barev aperik", "barev aperik");
+root.appendChild(myBox)
