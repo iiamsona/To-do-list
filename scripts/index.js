@@ -1,14 +1,18 @@
 import Button from "./components/button/button.js";
 import Box from "./components/boxes/Box.js";
 import AddList from "./components/boxes/AddList.js";
+import Text from "./components/boxes/Text.js";
 
 const root = document.getElementById("root");
 
-const myBox = new Box("barev aperik", "hajox aperik");
-root.appendChild(myBox);
+const firstBoxes = new Box("Boxes", "To Do");
+root.appendChild(firstBoxes);
 
-const myButton = new Button("barev aperik2", "barev aperik");
-root.appendChild(myButton);
+const myText = new Text("");
+root.appendChild(myText);
 
-const addList = new AddList();
-root.appendChild(addList)
+// const createBtn = new Button("Create", "Create");
+// root.appendChild(createBtn);
+
+// const addList = new AddList();
+// root.appendChild(addList)

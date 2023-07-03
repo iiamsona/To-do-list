@@ -84,6 +84,7 @@ html {
   background-color: #1a1818;
   transition: background 0.3s;
   cursor: pointer;
+  font-family: Times, "Times New Roman", serif;
 }
 
 .addCard:hover {
@@ -100,4 +101,20 @@ html {
   color: #000000;
   background-color: #7f7f7f80;
   cursor: pointer;
+   font-family: Times, "Times New Roman", serif;
+}
+
+.textdiv {
+  margin-top: 100px;
+  width: 250px;
+  min-height: 30px;
+  height: 30px + text;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #1a1818;
+}
+
+#text {
+  font-family: Times, "Times New Roman", serif;
+  color: #7f7f7f;
 }
