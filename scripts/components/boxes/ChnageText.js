@@ -1,3 +1,4 @@
+
 export default function changeText() {
   const maxLength = 30;
 
@@ -13,7 +14,8 @@ export default function changeText() {
     });
 
     if (event.keyCode === 13) {
-      this.innerHTML = inputElement.value;
+        localStorage.setItem("newTitle", inputElement.value);
+      this.innerHTML = localStorage.getItem("newTitle");
       inputElement.parentNode.replaceChild(this, inputElement);
     }
   });
