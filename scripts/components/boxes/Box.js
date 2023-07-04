@@ -1,3 +1,5 @@
+import changeText from "./ChnageText.js";
+
 export default class Box {
   props = {};
 
@@ -7,6 +9,8 @@ export default class Box {
 
     const parser = new DOMParser();
     const html = parser.parseFromString(this.render(), "text/html");
+    const titlet = html.body.querySelector('.title');
+    titlet.addEventListener("click", () => changeText.call(titlet));
     return html.body.firstChild;
   }
 

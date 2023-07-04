@@ -49,11 +49,24 @@ html {
   padding: 10px;
   background-color: #1a1818;
 }
-.title {
+.title,
+.newTitle {
+  font-size: 15px;
   background-color: #1a1818;
   font-family: Times, "Times New Roman", serif;
   color: #f5ffe7;
   cursor: pointer;
+  padding: 2px;
+}
+
+.inputElement {
+  font-size: 18px;
+  background-color: #2b2828;
+  font-family: Times, "Times New Roman", serif;
+  color: #f5ffe7;
+  cursor: pointer;
+  border: #cc99ff;
+  border-radius: 5px;
 }
 
 .dots {
@@ -101,7 +114,7 @@ html {
   color: #000000;
   background-color: #7f7f7f80;
   cursor: pointer;
-   font-family: Times, "Times New Roman", serif;
+  font-family: Times, "Times New Roman", serif;
 }
 
 .textdiv {
