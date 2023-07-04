@@ -49,8 +49,7 @@ html {
   padding: 10px;
   background-color: #1a1818;
 }
-.title,
-.newTitle {
+.title{
   font-size: 15px;
   background-color: #1a1818;
   font-family: Times, "Times New Roman", serif;
