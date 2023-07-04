@@ -1,5 +1,4 @@
-
-export default function changeText() {
+export default function changeTitle() {
   const maxLength = 30;
 
   const inputElement = document.createElement("input");

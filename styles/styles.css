@@ -119,13 +119,13 @@ html {
 .textdiv {
   width: 250px;
   min-height: 30px;
-  height: 30px + text;
+  height: 30px + label;
   padding: 5px;
   border-radius: 10px;
   background-color: #1a1818;
 }
 
-#text {
+.label {
   font-family: Times, "Times New Roman", serif;
-  color: #7f7f7f;
+  color: #ffffff;
 }

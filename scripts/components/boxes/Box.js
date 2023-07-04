@@ -1,4 +1,4 @@
-import changeText from "./ChnageText.js";
+import changeTitle from "./ChangeTitle.js";
 
 export default class Box {
   props = {};
@@ -9,9 +9,9 @@ export default class Box {
 
     const parser = new DOMParser();
     const html = parser.parseFromString(this.render(), "text/html");
-    const titlet = html.body.querySelector('.title');
-    titlet.innerHTML = localStorage.getItem("newTitle")
-    titlet.addEventListener("click", () => changeText.call(titlet));
+    const titlet = html.body.querySelector(".title");
+    titlet.innerHTML = localStorage.getItem("newTitle");
+    titlet.addEventListener("click", () => changeTitle.call(titlet));
     return html.body.firstChild;
   }
 
@@ -31,5 +31,3 @@ export default class Box {
   `;
   }
 }
-
-

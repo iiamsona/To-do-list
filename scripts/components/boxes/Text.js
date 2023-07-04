@@ -11,7 +11,7 @@ export default class Text {
 
     render(){ return `
         <div class = textdiv>
-            <p id = 'text'>${this.props.label}</p>
+            <p class = 'label'>${this.props.label}</p>
         </div>
         `
     }
