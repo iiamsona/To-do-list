@@ -10,8 +10,9 @@ export default class Box {
     const parser = new DOMParser();
     const html = parser.parseFromString(this.render(), "text/html");
     const titlet = html.body.querySelector(".title");
-    titlet.innerHTML = localStorage.getItem("newTitle");
+    titlet.innerHTML = title;
     titlet.addEventListener("click", () => changeTitle.call(titlet));
+    titlet.innerHTML = localStorage.getItem("newTitle"); 
     return html.body.firstChild;
   }
 

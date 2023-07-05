@@ -58,7 +58,7 @@ html {
   padding: 2px;
 }
 
-.inputElement {
+.inputElement, .inputEl {
   font-size: 18px;
   background-color: #2b2828;
   font-family: Times, "Times New Roman", serif;
@@ -125,7 +125,7 @@ html {
   background-color: #1a1818;
 }
 
-.label {
+.text {
   font-family: Times, "Times New Roman", serif;
   color: #ffffff;
 }
