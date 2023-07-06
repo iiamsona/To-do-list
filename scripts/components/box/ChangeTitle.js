@@ -4,7 +4,6 @@ export default function changeTitle() {
   const inputElement = document.createElement("input");
   inputElement.classList.add("inputElement");
   inputElement.value = this.textContent;
-
   this.parentNode.replaceChild(inputElement, this);
 
   inputElement.addEventListener("keydown", (event) => {
@@ -12,8 +11,8 @@ export default function changeTitle() {
       this.value = this.value.slice(0, maxLength);
     });
 
-    if (event.keyCode === 13) {
-        localStorage.setItem("newTitle", inputElement.value);
+    if (event.keyCode === 13 && inputElement.value != "") {
+      localStorage.setItem("newTitle", inputElement.value);
       this.innerHTML = localStorage.getItem("newTitle");
       inputElement.parentNode.replaceChild(this, inputElement);
     }
