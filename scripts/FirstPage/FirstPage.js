@@ -12,6 +12,9 @@ export default function FirstPage (){
      const firstBoxe2 = new Box("Boxes", "To Do");
      root.appendChild(firstBoxe2);
     
+     const firstBoxe3 = new Box("Boxes", "To Do");
+     root.appendChild(firstBoxe3);
+     
 
     // const myText = new Text("Barve ape");
     // root.appendChild(myText);

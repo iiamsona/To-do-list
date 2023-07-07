@@ -1,19 +1,28 @@
 import changeTitle from "./ChangeTitle.js";
 
 export default class Box {
+  static count = 0;
   props = {};
 
   constructor(className, title) {
     this.props.className = className;
     this.props.title = title;
 
+   
+    Box.incrementCount();
+    
     const parser = new DOMParser();
     const html = parser.parseFromString(this.render(), "text/html");
     const titlet = html.body.querySelector(".title");
     titlet.innerHTML = title;
     titlet.addEventListener("click", () => changeTitle.call(titlet));
-    titlet.innerHTML = localStorage.getItem("newTitle"); 
+    titlet.innerHTML = localStorage.getItem(Box.incrementCount);
+     
     return html.body.firstChild;
+  }
+
+  static incrementCount(){
+   return Box.count++;
   }
 
   render() {

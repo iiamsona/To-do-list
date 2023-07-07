@@ -1,6 +1,12 @@
+import Box from "./Box.js";
+
 export default function changeTitle() {
   const maxLength = 30;
+  const key = `box_title_${Box.count}`;
 
+  //chjxaynanas vres pls
+  
+  console.log(key)
   const inputElement = document.createElement("input");
   inputElement.classList.add("inputElement");
   inputElement.value = this.textContent;
@@ -12,8 +18,8 @@ export default function changeTitle() {
     });
 
     if (event.keyCode === 13 && inputElement.value != "") {
-      localStorage.setItem("newTitle", inputElement.value);
-      this.innerHTML = localStorage.getItem("newTitle");
+      localStorage.setItem(Box.incrementCount, inputElement.value);
+      this.innerHTML = localStorage.getItem(Box.incrementCount);
       inputElement.parentNode.replaceChild(this, inputElement);
     }
   });
